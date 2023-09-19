@@ -1,12 +1,22 @@
-import math
+import math   #lai var izmantot
+import random
+
 radiuss = int(input('Ievadiet rinķa līnijas rādiusu:'))
-print(radiuss)
+print(radiuss) #ievada radiusu
+
 PI = 3.1415
-print('Rinķa līnijas garums:', 2*PI*radiuss)
-print('Rinķa līnijas Laukums:', radiuss*radiuss*PI)
+garums = 2*PI*radiuss       #aprēķini
+laukums = math.pow(radiuss,2)*PI  
+
+print('Rinķa līnijas garums:',"%.2f"%garums)    #parāda aprēķinus rinķa līnijai
+print('Rinķa līnijas Laukums:', "%.2f"%laukums)
+
 katete1 = int(input('Ievadiet taisnlenķa trijstūra pirmās katetes garumu:'))
 print(katete1)
 katete2 = int(input('Ievadiet taisnlenķa trijstūra otrās katetes garumu:'))
 print(katete2)
-h = math.sqrt(katete1*katete1+katete2*katete2)
-print('Taisnlenķa trijstūra hipotenūzas garums:', h)
+h = math.sqrt(math.pow(katete1,2)+math.pow(katete2,2))
+print('Taisnlenķa trijstūra hipotenūzas garums:', "%.2f"%h)    #hipetonūzas aprēķins
+
+skaitlis = random.random() #izvēlas nejaušu skaitli
+print('Gadījuma skaitlis no 0 - 1:',skaitlis )
