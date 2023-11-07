@@ -1,20 +1,13 @@
-'''mainīgo topu pārveidošana,
-datu tipu iegūšana no literāļ,
-konkatenācija'''
+#izveidot 2 sarakstus
+mans_saraksts = ['svece',2,'kaķis']
+print('1 .saraksts:   ',mans_saraksts)
 
-name = 'Anna'
-teksts = 'teksts'
-skaitlis = 9 #int  tipa
-print(name)
-kombo = name, teksts #mainīgo aplvienošana
-print(kombo)
+tavs_saraksts = ['kafija','brauniji','kaarstmaizes']
+print('2 .elements:   ',tavs_saraksts[2])\
 
-varda_garums = len(teksts)
-print('Mainiga garums:',varda_garums)
+vardi = ['Alise','Pēteris','Katrīna']
+for vienums in vardi:
+    print('Sveiki',vienums)
 
-a = b = c = 300 #chaned assigment
-print(a, b, c)
-
-x, y =10, "hello"
-print(x)
-print(y)
+lielais_saraksts = (mans_saraksts+tavs_saraksts)
+print(lielais_saraksts)
